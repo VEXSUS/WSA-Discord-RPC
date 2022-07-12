@@ -40,20 +40,6 @@ Partial Class MainMenu
         Me.pictureBox_Update = New System.Windows.Forms.PictureBox()
         Me.Page_Logs = New System.Windows.Forms.TabPage()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Page_Settings = New System.Windows.Forms.TabPage()
-        Me.label_SOON = New System.Windows.Forms.Label()
-        Me.checkBox_automaticUpdates = New WSA_Discord_RPC.ChromeCheckbox()
-        Me.label_OneDriveStatus = New System.Windows.Forms.Label()
-        Me.label_OneDriveTXT = New System.Windows.Forms.Label()
-        Me.Separator3 = New WSA_Discord_RPC.Separator()
-        Me.Separator2 = New WSA_Discord_RPC.Separator()
-        Me.checkBox_RunTrayMode = New WSA_Discord_RPC.ChromeCheckbox()
-        Me.checkBox_RunDiscordRPC = New WSA_Discord_RPC.ChromeCheckbox()
-        Me.Separator1 = New WSA_Discord_RPC.Separator()
-        Me.button_OneDriveSync = New WSA_Discord_RPC.ChromeButton()
-        Me.label_OneDriveDescription = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.label_OneDriveTitle = New System.Windows.Forms.Label()
         Me.Page_Personalization = New System.Windows.Forms.TabPage()
         Me.ExampleTab = New WSA_Discord_RPC.ChromeTabcontrol()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -65,16 +51,22 @@ Partial Class MainMenu
         Me.label_PersonalizationDescription = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.label_PersonalizationTitle = New System.Windows.Forms.Label()
+        Me.Page_Settings = New System.Windows.Forms.TabPage()
+        Me.label_SOON = New System.Windows.Forms.Label()
+        Me.checkBox_automaticUpdates = New WSA_Discord_RPC.ChromeCheckbox()
+        Me.Separator2 = New WSA_Discord_RPC.Separator()
+        Me.checkBox_RunTrayMode = New WSA_Discord_RPC.ChromeCheckbox()
+        Me.checkBox_RunDiscordRPC = New WSA_Discord_RPC.ChromeCheckbox()
+        Me.Separator1 = New WSA_Discord_RPC.Separator()
         Me.MainMenu_Theme.SuspendLayout()
         Me.MainMenu_Tabs.SuspendLayout()
         Me.Page_Updates.SuspendLayout()
         CType(Me.pictureBox_Update, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Page_Logs.SuspendLayout()
-        Me.Page_Settings.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Page_Personalization.SuspendLayout()
         Me.ExampleTab.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Page_Settings.SuspendLayout()
         Me.SuspendLayout()
         '
         '_tray
@@ -158,7 +150,7 @@ Partial Class MainMenu
         Me.txt_Updates.Name = "txt_Updates"
         Me.txt_Updates.ReadOnly = True
         Me.txt_Updates.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth
-        Me.txt_Updates.Size = New System.Drawing.Size(241, 91)
+        Me.txt_Updates.Size = New System.Drawing.Size(241, 90)
         Me.txt_Updates.TabIndex = 13
         Me.txt_Updates.Text = "***************************" & Global.Microsoft.VisualBasic.ChrW(10) & "Changelog for 0.0.0" & Global.Microsoft.VisualBasic.ChrW(10) & "***************************" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & "* xy" &
     "z"
@@ -256,173 +248,6 @@ Partial Class MainMenu
         Me.RichTextBox1.Size = New System.Drawing.Size(255, 206)
         Me.RichTextBox1.TabIndex = 14
         Me.RichTextBox1.Text = "[January, 1, 1970] Initializing UNIX Time..."
-        '
-        'Page_Settings
-        '
-        Me.Page_Settings.BackColor = System.Drawing.Color.White
-        Me.Page_Settings.Controls.Add(Me.label_SOON)
-        Me.Page_Settings.Controls.Add(Me.checkBox_automaticUpdates)
-        Me.Page_Settings.Controls.Add(Me.label_OneDriveStatus)
-        Me.Page_Settings.Controls.Add(Me.label_OneDriveTXT)
-        Me.Page_Settings.Controls.Add(Me.Separator3)
-        Me.Page_Settings.Controls.Add(Me.Separator2)
-        Me.Page_Settings.Controls.Add(Me.checkBox_RunTrayMode)
-        Me.Page_Settings.Controls.Add(Me.checkBox_RunDiscordRPC)
-        Me.Page_Settings.Controls.Add(Me.Separator1)
-        Me.Page_Settings.Controls.Add(Me.button_OneDriveSync)
-        Me.Page_Settings.Controls.Add(Me.label_OneDriveDescription)
-        Me.Page_Settings.Controls.Add(Me.PictureBox1)
-        Me.Page_Settings.Controls.Add(Me.label_OneDriveTitle)
-        Me.Page_Settings.ImageIndex = 1
-        Me.Page_Settings.Location = New System.Drawing.Point(119, 4)
-        Me.Page_Settings.Name = "Page_Settings"
-        Me.Page_Settings.Padding = New System.Windows.Forms.Padding(3)
-        Me.Page_Settings.Size = New System.Drawing.Size(261, 212)
-        Me.Page_Settings.TabIndex = 1
-        Me.Page_Settings.Text = "Settings"
-        '
-        'label_SOON
-        '
-        Me.label_SOON.AutoSize = True
-        Me.label_SOON.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_SOON.ForeColor = System.Drawing.Color.Red
-        Me.label_SOON.Location = New System.Drawing.Point(168, 185)
-        Me.label_SOON.Name = "label_SOON"
-        Me.label_SOON.Size = New System.Drawing.Size(38, 13)
-        Me.label_SOON.TabIndex = 15
-        Me.label_SOON.Text = "SOON"
-        '
-        'checkBox_automaticUpdates
-        '
-        Me.checkBox_automaticUpdates.Checked = False
-        Me.checkBox_automaticUpdates.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8="
-        Me.checkBox_automaticUpdates.Enabled = False
-        Me.checkBox_automaticUpdates.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.checkBox_automaticUpdates.Image = Nothing
-        Me.checkBox_automaticUpdates.Location = New System.Drawing.Point(9, 185)
-        Me.checkBox_automaticUpdates.Name = "checkBox_automaticUpdates"
-        Me.checkBox_automaticUpdates.NoRounding = False
-        Me.checkBox_automaticUpdates.Size = New System.Drawing.Size(164, 17)
-        Me.checkBox_automaticUpdates.TabIndex = 14
-        Me.checkBox_automaticUpdates.Text = "Enable automatic updates"
-        Me.checkBox_automaticUpdates.Transparent = False
-        '
-        'label_OneDriveStatus
-        '
-        Me.label_OneDriveStatus.AutoSize = True
-        Me.label_OneDriveStatus.ForeColor = System.Drawing.Color.Crimson
-        Me.label_OneDriveStatus.Location = New System.Drawing.Point(99, 117)
-        Me.label_OneDriveStatus.Name = "label_OneDriveStatus"
-        Me.label_OneDriveStatus.Size = New System.Drawing.Size(74, 15)
-        Me.label_OneDriveStatus.TabIndex = 11
-        Me.label_OneDriveStatus.Text = "Not Synced !"
-        '
-        'label_OneDriveTXT
-        '
-        Me.label_OneDriveTXT.AutoSize = True
-        Me.label_OneDriveTXT.Location = New System.Drawing.Point(6, 117)
-        Me.label_OneDriveTXT.Name = "label_OneDriveTXT"
-        Me.label_OneDriveTXT.Size = New System.Drawing.Size(94, 15)
-        Me.label_OneDriveTXT.TabIndex = 10
-        Me.label_OneDriveTXT.Text = "OneDrive Status:"
-        '
-        'Separator3
-        '
-        Me.Separator3.Location = New System.Drawing.Point(6, 112)
-        Me.Separator3.MaximumSize = New System.Drawing.Size(2000, 2)
-        Me.Separator3.MinimumSize = New System.Drawing.Size(0, 2)
-        Me.Separator3.Name = "Separator3"
-        Me.Separator3.Size = New System.Drawing.Size(249, 2)
-        Me.Separator3.TabIndex = 9
-        '
-        'Separator2
-        '
-        Me.Separator2.Location = New System.Drawing.Point(6, 208)
-        Me.Separator2.MaximumSize = New System.Drawing.Size(2000, 2)
-        Me.Separator2.MinimumSize = New System.Drawing.Size(0, 2)
-        Me.Separator2.Name = "Separator2"
-        Me.Separator2.Size = New System.Drawing.Size(249, 2)
-        Me.Separator2.TabIndex = 8
-        '
-        'checkBox_RunTrayMode
-        '
-        Me.checkBox_RunTrayMode.Checked = False
-        Me.checkBox_RunTrayMode.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8="
-        Me.checkBox_RunTrayMode.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.checkBox_RunTrayMode.Image = Nothing
-        Me.checkBox_RunTrayMode.Location = New System.Drawing.Point(9, 165)
-        Me.checkBox_RunTrayMode.Name = "checkBox_RunTrayMode"
-        Me.checkBox_RunTrayMode.NoRounding = False
-        Me.checkBox_RunTrayMode.Size = New System.Drawing.Size(148, 17)
-        Me.checkBox_RunTrayMode.TabIndex = 7
-        Me.checkBox_RunTrayMode.Text = "Enable tray mode"
-        Me.checkBox_RunTrayMode.Transparent = False
-        '
-        'checkBox_RunDiscordRPC
-        '
-        Me.checkBox_RunDiscordRPC.Checked = False
-        Me.checkBox_RunDiscordRPC.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8="
-        Me.checkBox_RunDiscordRPC.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.checkBox_RunDiscordRPC.Image = Nothing
-        Me.checkBox_RunDiscordRPC.Location = New System.Drawing.Point(9, 144)
-        Me.checkBox_RunDiscordRPC.Name = "checkBox_RunDiscordRPC"
-        Me.checkBox_RunDiscordRPC.NoRounding = False
-        Me.checkBox_RunDiscordRPC.Size = New System.Drawing.Size(233, 17)
-        Me.checkBox_RunDiscordRPC.TabIndex = 5
-        Me.checkBox_RunDiscordRPC.Text = "Enable Discord RPC on program startup"
-        Me.checkBox_RunDiscordRPC.Transparent = False
-        '
-        'Separator1
-        '
-        Me.Separator1.Location = New System.Drawing.Point(6, 136)
-        Me.Separator1.MaximumSize = New System.Drawing.Size(2000, 2)
-        Me.Separator1.MinimumSize = New System.Drawing.Size(0, 2)
-        Me.Separator1.Name = "Separator1"
-        Me.Separator1.Size = New System.Drawing.Size(249, 2)
-        Me.Separator1.TabIndex = 4
-        '
-        'button_OneDriveSync
-        '
-        Me.button_OneDriveSync.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w=="
-        Me.button_OneDriveSync.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.button_OneDriveSync.Image = Nothing
-        Me.button_OneDriveSync.Location = New System.Drawing.Point(9, 83)
-        Me.button_OneDriveSync.Name = "button_OneDriveSync"
-        Me.button_OneDriveSync.NoRounding = False
-        Me.button_OneDriveSync.Size = New System.Drawing.Size(91, 23)
-        Me.button_OneDriveSync.TabIndex = 3
-        Me.button_OneDriveSync.Text = "Turn on Sync!"
-        Me.button_OneDriveSync.Transparent = False
-        '
-        'label_OneDriveDescription
-        '
-        Me.label_OneDriveDescription.AutoSize = True
-        Me.label_OneDriveDescription.Location = New System.Drawing.Point(6, 34)
-        Me.label_OneDriveDescription.Name = "label_OneDriveDescription"
-        Me.label_OneDriveDescription.Size = New System.Drawing.Size(215, 45)
-        Me.label_OneDriveDescription.TabIndex = 2
-        Me.label_OneDriveDescription.Text = "As of version 1.4.0, we have introduced " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the option to sync the configuration " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
-    "file using OneDrive."
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.WSA_Discord_RPC.My.Resources.Resources.onedrive
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'label_OneDriveTitle
-        '
-        Me.label_OneDriveTitle.AutoSize = True
-        Me.label_OneDriveTitle.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_OneDriveTitle.Location = New System.Drawing.Point(39, 6)
-        Me.label_OneDriveTitle.Name = "label_OneDriveTitle"
-        Me.label_OneDriveTitle.Size = New System.Drawing.Size(160, 21)
-        Me.label_OneDriveTitle.TabIndex = 0
-        Me.label_OneDriveTitle.Text = "Sync with OneDrive"
         '
         'Page_Personalization
         '
@@ -553,6 +378,95 @@ Partial Class MainMenu
         Me.label_PersonalizationTitle.TabIndex = 1
         Me.label_PersonalizationTitle.Text = "Personalization"
         '
+        'Page_Settings
+        '
+        Me.Page_Settings.BackColor = System.Drawing.Color.White
+        Me.Page_Settings.Controls.Add(Me.label_SOON)
+        Me.Page_Settings.Controls.Add(Me.checkBox_automaticUpdates)
+        Me.Page_Settings.Controls.Add(Me.Separator2)
+        Me.Page_Settings.Controls.Add(Me.checkBox_RunTrayMode)
+        Me.Page_Settings.Controls.Add(Me.checkBox_RunDiscordRPC)
+        Me.Page_Settings.Controls.Add(Me.Separator1)
+        Me.Page_Settings.ImageIndex = 1
+        Me.Page_Settings.Location = New System.Drawing.Point(119, 4)
+        Me.Page_Settings.Name = "Page_Settings"
+        Me.Page_Settings.Padding = New System.Windows.Forms.Padding(3)
+        Me.Page_Settings.Size = New System.Drawing.Size(261, 212)
+        Me.Page_Settings.TabIndex = 1
+        Me.Page_Settings.Text = "Settings"
+        '
+        'label_SOON
+        '
+        Me.label_SOON.AutoSize = True
+        Me.label_SOON.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_SOON.ForeColor = System.Drawing.Color.Red
+        Me.label_SOON.Location = New System.Drawing.Point(165, 55)
+        Me.label_SOON.Name = "label_SOON"
+        Me.label_SOON.Size = New System.Drawing.Size(38, 13)
+        Me.label_SOON.TabIndex = 15
+        Me.label_SOON.Text = "SOON"
+        '
+        'checkBox_automaticUpdates
+        '
+        Me.checkBox_automaticUpdates.Checked = False
+        Me.checkBox_automaticUpdates.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8="
+        Me.checkBox_automaticUpdates.Enabled = False
+        Me.checkBox_automaticUpdates.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.checkBox_automaticUpdates.Image = Nothing
+        Me.checkBox_automaticUpdates.Location = New System.Drawing.Point(6, 55)
+        Me.checkBox_automaticUpdates.Name = "checkBox_automaticUpdates"
+        Me.checkBox_automaticUpdates.NoRounding = False
+        Me.checkBox_automaticUpdates.Size = New System.Drawing.Size(164, 17)
+        Me.checkBox_automaticUpdates.TabIndex = 14
+        Me.checkBox_automaticUpdates.Text = "Enable automatic updates"
+        Me.checkBox_automaticUpdates.Transparent = False
+        '
+        'Separator2
+        '
+        Me.Separator2.Location = New System.Drawing.Point(5, 78)
+        Me.Separator2.MaximumSize = New System.Drawing.Size(2000, 2)
+        Me.Separator2.MinimumSize = New System.Drawing.Size(0, 2)
+        Me.Separator2.Name = "Separator2"
+        Me.Separator2.Size = New System.Drawing.Size(249, 2)
+        Me.Separator2.TabIndex = 8
+        '
+        'checkBox_RunTrayMode
+        '
+        Me.checkBox_RunTrayMode.Checked = False
+        Me.checkBox_RunTrayMode.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8="
+        Me.checkBox_RunTrayMode.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.checkBox_RunTrayMode.Image = Nothing
+        Me.checkBox_RunTrayMode.Location = New System.Drawing.Point(6, 35)
+        Me.checkBox_RunTrayMode.Name = "checkBox_RunTrayMode"
+        Me.checkBox_RunTrayMode.NoRounding = False
+        Me.checkBox_RunTrayMode.Size = New System.Drawing.Size(148, 17)
+        Me.checkBox_RunTrayMode.TabIndex = 7
+        Me.checkBox_RunTrayMode.Text = "Enable tray mode"
+        Me.checkBox_RunTrayMode.Transparent = False
+        '
+        'checkBox_RunDiscordRPC
+        '
+        Me.checkBox_RunDiscordRPC.Checked = False
+        Me.checkBox_RunDiscordRPC.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8="
+        Me.checkBox_RunDiscordRPC.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.checkBox_RunDiscordRPC.Image = Nothing
+        Me.checkBox_RunDiscordRPC.Location = New System.Drawing.Point(6, 14)
+        Me.checkBox_RunDiscordRPC.Name = "checkBox_RunDiscordRPC"
+        Me.checkBox_RunDiscordRPC.NoRounding = False
+        Me.checkBox_RunDiscordRPC.Size = New System.Drawing.Size(233, 17)
+        Me.checkBox_RunDiscordRPC.TabIndex = 5
+        Me.checkBox_RunDiscordRPC.Text = "Enable Discord RPC on program startup"
+        Me.checkBox_RunDiscordRPC.Transparent = False
+        '
+        'Separator1
+        '
+        Me.Separator1.Location = New System.Drawing.Point(5, 6)
+        Me.Separator1.MaximumSize = New System.Drawing.Size(2000, 2)
+        Me.Separator1.MinimumSize = New System.Drawing.Size(0, 2)
+        Me.Separator1.Name = "Separator1"
+        Me.Separator1.Size = New System.Drawing.Size(249, 2)
+        Me.Separator1.TabIndex = 4
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -570,13 +484,12 @@ Partial Class MainMenu
         Me.Page_Updates.PerformLayout()
         CType(Me.pictureBox_Update, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Page_Logs.ResumeLayout(False)
-        Me.Page_Settings.ResumeLayout(False)
-        Me.Page_Settings.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Page_Personalization.ResumeLayout(False)
         Me.Page_Personalization.PerformLayout()
         Me.ExampleTab.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Page_Settings.ResumeLayout(False)
+        Me.Page_Settings.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -585,17 +498,10 @@ Partial Class MainMenu
     Friend WithEvents MainMenu_Tabs As ChromeTabcontrol
     Friend WithEvents Page_Settings As TabPage
     Friend WithEvents Page_Personalization As TabPage
-    Friend WithEvents label_OneDriveTitle As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents label_OneDriveDescription As Label
-    Friend WithEvents button_OneDriveSync As ChromeButton
     Friend WithEvents Separator1 As Separator
     Friend WithEvents checkBox_RunDiscordRPC As ChromeCheckbox
     Friend WithEvents Separator2 As Separator
     Friend WithEvents checkBox_RunTrayMode As ChromeCheckbox
-    Friend WithEvents label_OneDriveStatus As Label
-    Friend WithEvents label_OneDriveTXT As Label
-    Friend WithEvents Separator3 As Separator
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents label_PersonalizationTitle As Label
     Friend WithEvents Separator5 As Separator

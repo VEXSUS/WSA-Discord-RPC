@@ -152,7 +152,6 @@
     </Compile>
     <Compile Include="Functions\DiscordRPCHandler.vb" />
     <Compile Include="Functions\IniFile.vb" />
-    <Compile Include="Functions\OneDriveSync.vb" />
     <Compile Include="Functions\TrayContextMenu.vb" />
     <Compile Include="Functions\Updates.vb" />
     <Compile Include="Functions\WSADiscordRPC.vb" />
