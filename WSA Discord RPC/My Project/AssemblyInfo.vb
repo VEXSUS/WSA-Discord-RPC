@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Discord Rich Presence for Windows Subsystem for Android™️")>
 <Assembly: AssemblyCompany("R4D1 Software - Unregistered company")>
 <Assembly: AssemblyProduct("WSA Discord RPC")>
-<Assembly: AssemblyCopyright("Copyright © R4D1 Software, Michał Marszał <support@vexsus.eu> 2022-2023")>
+<Assembly: AssemblyCopyright("Copyright © R4D1 Software, Michał Marszał <contact@vexsus.eu> 2022-2023")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.4.2.0")>
-<Assembly: AssemblyFileVersion("1.4.2.0")>
+<Assembly: AssemblyVersion("1.4.7.0")>
+<Assembly: AssemblyFileVersion("1.4.7.0")>

@@ -123,7 +123,6 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Functions\Config.vb" />
-    <Compile Include="Functions\CheckMD5.vb" />
     <Compile Include="MainMenu.Designer.vb">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </Compile>
