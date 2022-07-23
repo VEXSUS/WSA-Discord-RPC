@@ -1,8 +1,9 @@
 <a href="url"><img src="https://i.imgur.com/Z719RMu.png" align="left" height="64" width="64" ></a>
 
-# Introducing - WSA Discord RPC ! 
+# THE PROJECT WAS ABANDONED ⚠️
+**The project was abandoned due to the fact that the R4D1 Software organization no longer uses discord for privacy reasons. Therefore, no one from our organization can continue this project. If you are willing to continue this project please contact us at support@vexsus.eu.**
 
-Discord Rich presence for Windows Subsystem for Android. Created with love in germany by R4D1 Software 💖
+**Due to the abandonment of the project, I would also like to inform that there is no version 2.0 of this project.**
 
 # Installation
 
@@ -47,20 +48,10 @@ Google Authenticator, Twitch, Twitter and Twitter Lite
 
 ## Roadmap (2022/06 - 2022/07)
 
-- [x] Greater code optimization.
-- [x] Fixing of known bugs.
-- [ ] [⚠️ IN V2 Version] Adding the ability to style Discord Rich Presence separately for each application. (Users will be able to create their own discord api on [https://discordapp.com/developers](https://discordapp.com/developers) and implement it in registry or config file).
-- [x] Adding the creation of a configuration file so that the user can edit the program parameters more easily.
-- [ ] [⚠️ IN V2 Version] Adding an intelligent and self-learning program update system. The update system will check which program compilation number fits your current operating system.
+**- THE PROJECT WAS ABANDONED ⚠️**
 
 ## Known issues
-Known issues are available under [Releases](https://github.com/VEXSUS/WSA-Discord-RPC/releases/tag/1.4.0_stable). When we release the latest build of an application, we also include what doesn't work or what could potentially not work at all or not properly.
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+**Due to the abandonment of the project, we do not fix all kinds of new bugs**
 
 # License
 Copyright ©️ R4D1 Software 2022-2023 - All Rights Reserved
@@ -69,4 +60,5 @@ commercial purposes without notifying the code author is strictly prohibited.
 Forking the project on Github is allowed.
 Removing author credits in the program and code is prohibited.
 If any of these rules are directly violated. There may be legal consequences.
+Due to the abandonment of our project, we would like to inform you that if you find someone willing to continue this project, please contact us at the email below. We do not write back on social media!
 Written by Michał Marszał <support@vexsus.eu>, June 2022.
