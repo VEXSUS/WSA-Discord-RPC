@@ -123,6 +123,7 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Functions\Config.vb" />
+    <Compile Include="Functions\CheckMD5.vb" />
     <Compile Include="MainMenu.Designer.vb">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </Compile>
@@ -151,6 +152,7 @@
     </Compile>
     <Compile Include="Functions\DiscordRPCHandler.vb" />
     <Compile Include="Functions\IniFile.vb" />
+    <Compile Include="Functions\OneDriveSync.vb" />
     <Compile Include="Functions\TrayContextMenu.vb" />
     <Compile Include="Functions\Updates.vb" />
     <Compile Include="Functions\WSADiscordRPC.vb" />

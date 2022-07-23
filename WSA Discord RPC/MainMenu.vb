@@ -1,6 +1,6 @@
 ﻿'---------------------------------------------------------------------------------'
 'WSA Discord RPC - Source Code - Main Program                                     '
-'Current Version of Source and App: v1.4.7_stable                                 '
+'Current Version of Source and App: v1.4.2_stable                                 '
 'Author: Michał Marszał (https://github.com/VEXSUS)                               '
 'Twitter: https://twitter.com/_VEXSUS                                             '
 '---------------------------------------------------------------------------------'
@@ -10,7 +10,7 @@
 'Forking the project on Github is allowed.                                        '
 'Removing author credits in the program and code is prohibited.                   '
 'If any of these rules are directly violated. There may be legal consequences.    '
-'Written by Michał Marszał <contact@vexsus.eu>, July 2022                         '
+'Written by Michał Marszał <support@vexsus.eu>, June 2022                         '
 '---------------------------------------------------------------------------------'
 
 '---------------------------------------------------------------------------------'
@@ -45,6 +45,13 @@ Public Class MainMenu
                     checkBox_RunDiscordRPC.Checked = False
                     checkBox_RunDiscordRPC.Text = "Enable Discord RPC on program startup"
                 End If
+                If iniFile.GetKeyValue("main", "OneDriveSync") = True Then
+                    sync(label_OneDriveStatus)
+                    button_OneDriveSync.Text = "Turn off Sync!"
+                Else
+                    button_OneDriveSync.Text = "Turn on Sync!"
+                End If
+                sync(label_OneDriveStatus)
                 txt_Updates.Text = webClient.DownloadString(changelogAddress)
                 checkForUpdates(label_UpdateInfo, label_lastChecked, txt_Updates, label_changelogTitle, button_CheckForUpdates, label_checkChannelUpdate)
                 If iniFile.GetKeyValue("main", "TrayMode") = True Then
@@ -107,6 +114,17 @@ Public Class MainMenu
             createContextMenu(_tray)
         End If
         iniFile.Save("settings.ini", Encoding.UTF8)
+    End Sub
+    Private Sub button_OneDriveSync_Click(sender As Object, e As EventArgs) Handles button_OneDriveSync.Click
+        If iniFile.GetKeyValue("main", "OneDriveSync") = True Then
+            iniFile.SetKeyValue("main", "OneDriveSync", False)
+            button_OneDriveSync.Text = "Turn on Sync!"
+        Else
+            iniFile.SetKeyValue("main", "OneDriveSync", True)
+            button_OneDriveSync.Text = "Turn off Sync!"
+        End If
+        iniFile.Save("settings.ini", Encoding.UTF8)
+        sync(label_OneDriveStatus)
     End Sub
     Private Sub button_CheckForUpdates_Click(sender As Object, e As EventArgs) Handles button_CheckForUpdates.Click
         If button_CheckForUpdates.Text = "Download updates" Then
