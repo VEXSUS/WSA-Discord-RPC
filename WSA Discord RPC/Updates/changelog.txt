@@ -1,7 +1,1 @@
-***************************
-Changelog:
-(RC) 1.4.5_release_candidate
-***************************
-
-* Soon...
-* Testing..
+READ NEW READ.ME ON GITHUB
